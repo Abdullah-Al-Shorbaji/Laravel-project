@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+
+/*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+:root {
+  --blue: #3490dc;
+  --cyan: #6cb2eb;
+  --danger: #e3342f;
+  --dark: #343a40;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --green: #38c172;
+  --indigo: #6574cd;
+  --info: #6cb2eb;
+  --light: #f8f9fa;
+  --orange: #f6993f;
+  --pink: #f66d9b;
+  --primary: #3490dc;
+  --purple: #9561e2;
+  --red: #e3342f;
+  --secondary: #6c757d;
+  --success: #38c172;
+  --teal: #4dc0b5;
+  --warning: #ffed4a;
+  --white: #fff;
+  --yellow: #ffed4a;
+
+  --font: #1c5191;
+  --logo: #1c5191;
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body
+{
+  width:            80%;
+  min-width:        850px;
+  margin:           auto;
+  margin-top:       10px;
+}
+
+.lang-header
+{
+    height:     auto;
+    max-height: 20px;
+    margin:			auto;
+    width:      100%;
+    min-width:  1050px;
+    overflow:   auto;
+}
+
+.lang-header img
+{
+  position: absolute;
+}
+
+  .lang-header ul
+  {
+      list-style-type: 	none;
+      display:			    flex;
+      margin:				    auto;
+      float:            right;
+  }
+
+.main-container
+{
+  background-color: #f5f6fc;
+}
+.main-header
+{
+    border: 1px solid var(--gray);
+    width:  100%;
+    min-width: 1050px;
+    margin: auto;
+    height: 35px;
+    box-shadow: 1px 1px 1px 1px var(--dark);
+    background-color: #8de0f7;
+    display:			    flex;
+}
+
+.main-header .outer-ul
+{
+    margin:				    auto;
+    list-style-type: 	none;
+    display:			    flex;
+    width:            80%;
+    margin-top:       6px;
+    padding:          0;
+}
+
+.main-header .outer-ul #o-li
+{
+    margin:       auto;
+    width:        25%;
+    text-align:   center;
+    color:        var(--font);
+    font-size:    20px;
+}
+
+  .main-header .inner-ul
+  {
+    margin:				    auto;
+    list-style-type: 	none;
+    display:			    flex;
+    width:            20%;
+    margin-top:       6px;
+    padding:          0;
+    margin-right:     0;
+  }
+
+  .main-header .inner-ul #i-li
+{
+    margin:           auto;
+    width:            48%;
+    min-width:        68px;
+    text-align:       center;
+    color:            var(--font);
+    font-size:        20px;
+    float:            right;
+    background-color: #4ad6ff;
+}
+
+/*----- rigester.blade.php -----*/
+
+#welcome-header
+{
+  color:  var(--font);
+  text-align: center;
+  margin-top: 50px;
+  min-width:  850px;
+}
+
+.register-form-main-border
+{
+  width:  100%;
+  min-width: 1050px;
+}
+
+.validation-msgs
+{
+  background-color: #ffdfab;
+}
+
+.validation-msgs ul
+{
+  width:    50%;
+  margin:   auto;
+  padding:  25px;
+}
+
+.validation-msgs ul li
+{
+  width:  50%;
+  margin: auto;
+  color: var(--danger);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.register-f-border
+{
+  width:      20%;
+  min-width:  550px;
+  margin:     auto;
+}
+
+.f-element-l
+{
+  color:      var(--font);
+  font-size:  20px;
+  text-align: left;
+}
+
+.f-element
+{
+  float:      right;  
+}
+
+.f-element-e
+{
+  width:      350px;
+  font-size:  18px;
+  color:      var(--font);
+}
+
+#register-submitting
+{
+  background-color:#4ad6ff;
+  border-radius:    10px;
+  width:            100px;
+  cursor:           pointer;
+}
+
+#register-submitting:hover
+{
+  font-size:  15px;
+  margin-top: -2px;
+  height:     25px;
+  opacity:    0.8;
+}
+
+#f-for-gaping-border,
+#l-for-gaping-border,
+#e-for-gaping-border,
+#pw-for-gaping-border,
+#c-pw-for-gaping-border,
+#for-gaping-border
+{
+  color:  #f5f6fc;
+  border: none;
+}
+
+.personal-photo-container
+{
+  width:          302px;
+}
+
+#personal-photo
+{
+  border:         1px solid var(--gray);
+  border-radius:  10px;
+  width:          270px;
+  height:         270px;
+}
+
+#clear-image
+{
+  display: 			none;
+  background-color:	#f5f6fc;
+  border:				none;
+  outline:			none;
+  width:				30px;
+  float:        right;
+}
+
+#clear_image:hover
+{
+cursor: pointer;
+}
+
+#add_photo_button
+{
+  border:           none;
+  background-color: lightblue;
+  color:            var(--font);
+  text-align:       center;
+  width:            270px;
+  border-radius:    10px;
+}
+
+#file:hover
+{
+  cursor:     pointer;
+}
+
+#file
+{
+  border:       1px solid var(--gray);
+  width:        270px;
+  opacity:      0;
+  margin:       auto;
+  margin-top:   -23px;
+}
+
+/*----- end of rigester.blade.php -----*/
